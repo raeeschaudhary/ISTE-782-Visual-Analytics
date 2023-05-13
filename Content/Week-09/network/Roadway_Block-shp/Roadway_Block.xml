@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <pubdate>20201118</pubdate>
+                <title>Roadway Block</title>
+                <geoform>vector digital data</geoform>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>For a city, street blocks are a very common way in which to organize and relate work (e.g. 'I need to fix a pothole on the 1600 Block of Pennsylvania Ave'). Although driveways or alleys may intersect streets, this representation requires that the segment remain unbroken. Road types include streets. Previously Called Street Segments. Note that there are no from/to address fields. DDOT will not be maintaining them in our data. There also will be no generating a 'streetname' list. This data set was created to act as a basis for public and private institutions to improve their policy and decision making; promote economic development; and enhance the quality of life for residents and businesses. For more information please visit DDOT's wiki page.</abstract>
+            <purpose>For a city, street blocks are a very common way in which to organize and relate work. Although driveways or alleys may intersect streets, this representation requires that the segment remain unbroken.</purpose>
+            <supplinf>https://wiki.ddot.dc.gov/display/GIS/DDOT%27s+Transportation+Data+Products</supplinf>
+        </descript>
+        <spdom>
+            <bounding>
+                <westbc>-77.116734</westbc>
+                <eastbc>-76.909401</eastbc>
+                <northbc>38.995255</northbc>
+                <southbc>38.793168</southbc>
+            </bounding>
+        </spdom>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>transportation</themekey>
+                <themekey>Street Block</themekey>
+            </theme>
+            <place>
+                <placekt>None</placekt>
+                <placekey>washington d.c.</placekey>
+                <placekey>dc</placekey>
+                <placekey>district of columbia</placekey>
+            </place>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>This work is licensed under a Creative Commons Attribution 4.0 International License.</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+                    <cntper>GIS Data Coordinator</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntfax>(202) 727-5660</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </ptcontac>
+        <datacred>DC District Department of Transportation</datacred>
+    </idinfo>
+    <dataqual>
+        <lineage>
+            <procstep>
+                <procdesc>Staff updated the dataset using the latest information</procdesc>
+                <procdate>20190726</procdate>
+                <proccont>
+                    <cntinfo>
+                        <cntorgp>
+                            <cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+                            <cntper>GIS Data Coordinator</cntper>
+                        </cntorgp>
+                        <cntaddr>
+                            <addrtype>unknown</addrtype>
+                            <address>200 I Street SE, 5th Floor</address>
+                            <city>Washington</city>
+                            <state>DC</state>
+                            <postal>20003</postal>
+                            <country>US</country>
+                        </cntaddr>
+                        <cntfax>(202) 727-5660</cntfax>
+                        <cntemail>dcgis@dc.gov</cntemail>
+                        <hours>8:30 am - 5 pm</hours>
+                    </cntinfo>
+                </proccont>
+            </procstep>
+        </lineage>
+    </dataqual>
+    <spdoinfo>
+        <direct>Vector</direct>
+        <ptvctinf>
+            <sdtsterm>
+                <sdtstype>String</sdtstype>
+                <ptvctcnt>13742</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>RoadwayBlockLn</enttypl>
+            </enttyp>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                                  
+                    
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                                                
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Shape</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                                                  
+                    
+                    <udom>Coordinates defining the features.</udom>
+                                                
+                
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>RouteID</attrlabl>
+                <attrdef>Unique ID of the route that this segment is on</attrdef>
+                <attrdefs>DDOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>FROMMEASURE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOMEASURE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ROUTENAME</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ROADTYPE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>BLOCKKEY</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALTRAVELLANES</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALPARKINGLANES</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALRAISEDBUFFERS</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALTRAVELLANEWIDTH</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALCROSSSECTIONWIDTH</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALPARKINGLANEWIDTH</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALRAISEDBUFFERWIDTH</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALTRAVELLANESINBOUND</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALTRAVELLANESOUTBOUND</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALTRAVELLANESBIDIRECTIONAL</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALTRAVELLANESREVERSIBLE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SUMMARYDIRECTION</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>BIKELANE_PARKINGLANE_ADJACENT</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>BIKELANE_THROUGHLANE_ADJACENT</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>BIKELANE_POCKETLANE_ADJACENT</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>BIKELANE_CONTRAFLOW</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>BIKELANE_CONVENTIONAL</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>BIKELANE_DUAL_PROTECTED</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>BIEKLANE_DUAL_BUFFERED</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>BIKELANE_PROTECTED</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>BIKELANE_BUFFERED</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>RIGHTTURN_EXCLUSIVE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LEFTTURN_EXCLUSIVE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>DOUBLEYELLOW_LINE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SECTIONFLAGS</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LOC_ERROR</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>MIDMEASURE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>AADT</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>AADT_YEAR</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>FHWAFUNCTIONALCLASS</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>HPMSID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>HPMSSECTIONTYPE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>IRI</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>IRI_DATE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>NHSCODE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>OWNERSHIP</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>PCI_CONDCATEGORY</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>PCI_LASTINSPECTED</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>PCI_SCORE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>QUADRANT</attrlabl>
+                <attrdef>Quadrant within DC</attrdef>
+                <attrdefs>DDOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>SIDEWALK_IB_PAVTYPE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SIDEWALK_IB_WIDTH</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SIDEWALK_OB_PAVTYPE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SIDEWALK_OB_WIDTH</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SPEEDLIMITS_IB</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SPEEDLIMITS_IB_ALT</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SPEEDLIMITS_OB</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SPEEDLIMITS_OB_ALT</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>STREETNAME</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>STREETTYPE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>BLOCK_NAME</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ADDRESS_RANGE_HIGH</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ADDRESS_RANGE_LOW</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ADDRESS_RANGE_RIGHT_HIGH</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ADDRESS_RANGE_LEFT_HIGH</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ADDRESS_RANGE_RIGHT_LOW</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>MAR_ID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>ADDRESS_RANGE_LEFT_LOW</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>BlockID</attrlabl>
+                <attrdef>Key ID for the block; it is a concatenation of the RouteID, FromIntersectionID and ToIntersectionID</attrdef>
+                <attrdefs>DDOT</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>DCFUNCTIONALCLASS</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>NHSTYPE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SNOWROUTE_DDOT</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SNOWROUTE_DPW</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SNOWSECTION_DDOT</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SNOWZONE_DDOT</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SNOWZONE_DPW</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LEFTTURN_CURBLANE_EXCL</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>LEFTTURN_CURBLANE_EXCL_LEN</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>RIGHTTURN_CURBLANE_EXCL</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>RIGHTTURN_CURBLANE_EXCL_LEN</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALBIKELANES</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>TOTALBIKELANEWIDTH</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>RPPDIRECTION</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>RPPSIDE</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SLOWSTREETINFO</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SE_ANNO_CAD_DATA</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>SHAPE.LEN</attrlabl>
+            </attr>
+        </detailed>
+    </eainfo>
+    <distinfo>
+        <distrib>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+                    <cntper>GIS Data Coordinator</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntfax>(202) 727-5660</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </distrib>
+        <distliab>See access and use constraints information.</distliab>
+        <custom>DC datasets can be downloaded from "http://opendata.dc.gov".</custom>
+    </distinfo>
+    <metainfo>
+        <metd>20201117</metd>
+        <metc>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>D.C. Office of the Chief Technology Officer</cntorg>
+                    <cntper>GIS Data Coordinator</cntper>
+                </cntorgp>
+                <cntaddr>
+                    <addrtype>mailing and physical</addrtype>
+                    <address>200 I Street SE, 5th Floor</address>
+                    <city>Washington</city>
+                    <state>DC</state>
+                    <postal>20003</postal>
+                    <country>US</country>
+                </cntaddr>
+                <cntfax>(202) 727-5660</cntfax>
+                <cntemail>dcgis@dc.gov</cntemail>
+                <hours>8:30 am - 5 pm</hours>
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
